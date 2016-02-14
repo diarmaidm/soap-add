@@ -1,0 +1,23 @@
+{
+  "name": "soap-add",
+  "description": "",
+  "main": "",
+  "authors": [
+    "diarmaidm <diarmaidm@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

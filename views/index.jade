@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  nav(id="navbar-custom").navbar.navbar-default.navbar-fixed-top
+    div.container
+      div.navbar-header
+        a(href="#").navbar-brand Add two numbers using soap
+
+  h1 This application uses a soap service to add 2 numbers
+  p Welcome to the #{title}
+  div
+    form(action="/" method="POST" name="addNumbers")
+      div
+        label(for="a") a: 
+        input(type="text" name="a")
+      div
+        label(for="b") b: 
+        input(type="text" name="b")
+      p
+      div
+        input(type="submit" value="Add the numbers")
+    div
+      label(name="sum" id="sum") The sum of #{a} and #{b} is: #{result} 
+
