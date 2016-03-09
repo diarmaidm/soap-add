@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "pretest": "jshint routes test",
-    "test": "node_modules/mocha/bin/mocha"
+    "test" : "node node_modules/.bin/mocha"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
