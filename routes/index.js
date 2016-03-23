@@ -15,6 +15,7 @@ router.post('/', function(req, res, next) {
 
   soap.createClient(url, function(err, client) {
     client.add(args, function(err, result) {
+      //console.log('last request', client.lastRequest);
       res.render('index', { a: a, b: b, result: result.sum });
     });
   });
