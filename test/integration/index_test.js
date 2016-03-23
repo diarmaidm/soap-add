@@ -2,7 +2,7 @@ var request = require('supertest');
 var app = require('../../app');
 var expect = require('chai').expect;
 
-describe('Home Page', function () {
+describe('Home Page to add using soap service', function () {
   it('has a header describing what it does', function (done) {
     request(app).get('/')
       .expect(/This application uses a soap service to add 2 numbers/, done);
