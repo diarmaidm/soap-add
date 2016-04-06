@@ -9,6 +9,11 @@ router.get('/', function(req, res, next) {
 
 /* POST home page. */
 router.post('/', function(req, res, next) {
+  req.session.num1 = 'test1';
+  req.session.num2 = 'test2';
+  req.session.num3 = 'test3';
+  req.session.num4 = 'test4';
+
   var a = req.body.a, b = req.body.b;
   var url = 'http://free-web-services.com/add.wsdl';
   var args = "<tns:addRequest><a>" + a + "</a><b>" + b + "</b></tns:addRequest>";
