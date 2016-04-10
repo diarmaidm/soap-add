@@ -102,4 +102,19 @@ We know we want addCandD to call get_c and get_d and return the results. However
 * 
 * 
 
+Various references:
+https://github.com/search?utf8=%E2%9C%93&q=sandboxed-module+app&type=Code&ref=searchresults
 
+https://github.com/totem/configurator/tree/df6938fed08052f5f80989d95d1c3236aa940c40/sandbox
+
+https://github.com/totem/configurator/blob/df6938fed08052f5f80989d95d1c3236aa940c40/app.js
+
+https://github.com/zappan/node-marionette-boilerplate/blob/2349d04c285bca424714ce434c2c76510c06e1ca/server/test/app.spec.js
+
+code coverage metrics
+http://www.vapidspace.com/coding/2014/10/29/code-coverage-metrics-with-mocha-and-istanbul/
+
+blanket
+http://techblog.net-a-porter.com/2014/03/measuring-test-coverage-of-dependency-injected-node-js-modules-via-blanket-js/
+
+https://travis-ci.org/felixge/node-sandboxed-module/builds/65164771
