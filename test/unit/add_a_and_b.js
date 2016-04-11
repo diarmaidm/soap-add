@@ -11,7 +11,7 @@ function addAandB() {
 
   console.log('.. .. In the real addAandB function before return statement .. .. ');
   return c;
-};
+}
 
 // export object
 // module.exports = { addAandB: addAandB };

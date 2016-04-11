@@ -27,7 +27,7 @@ module.exports = get_c;
 * Add minimum code to pass the test
 ```
 function get_c() {
-    return 18; 
+    return 18;
 }
 ```
 * Rerun the test - **it passes**
@@ -61,7 +61,7 @@ module.exports = get_d;
 * Rerun the test - **it passes**
 
 #### Add c and d but do not call the get_c or get_d functions
-* Create test 
+* Create test
 ```
 describe('addCandD() function', function () {
   it('returns the sum of 2 values as calculated in the function) ', function (done) {
@@ -99,8 +99,30 @@ module.exports = addCandD;
 #### We want to drive out addCandD implementation without the test calling the real get_c or get_d
 We know we want addCandD to call get_c and get_d and return the results. However we dont want our tests to call those methods.
 * `npm install sandbox-module --save-dev`
-* 
-* 
+*
+*
+
+## NOTE:
+** When using the sandboxed-module order appears to be important! **
+
+
+#### Played with enhancing script section of package.json
+```
+"scripts": {
+    "prestart": "node ./test/unit/get_a.js",
+    "start": "nodemon ./bin/www",
+    "pretest": "npm run lint",
+    "test": "node node_modules/.bin/mocha",
+    "posttest": "echo 'the test has been run!'",
+    "lint": "jshint routes/ test/ ",
+    "anotherway": "jshint *.js **/*.js **/**/*.js"
+  },
+  ```
+#### To use nodemon and run the app using node
+* change package.json `"start": "node ./bin/www",` to `"start": "nodemon ./bin/www",`
+* start the application on server using `PORT=3000 node ./bin/www`
+
+
 
 Various references:
 https://github.com/search?utf8=%E2%9C%93&q=sandboxed-module+app&type=Code&ref=searchresults

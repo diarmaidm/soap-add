@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "node node_modules/.bin/mocha"
+    "prestart": "node ./test/unit/get_a.js",
+    "start": "nodemon ./bin/www",
+    "posttest": "echo '. . . . . the tests have been ran!\n. . . . . Running jshint now.....\n'; npm run lint",
+    "test": "node node_modules/.bin/mocha",
+    "prettest": "echo 'the test has been run!'",
+    "lint": "jshint routes/ test/ ",
+    "anotherway": "jshint *.js **/*.js **/**/*.js"
   },
   "dependencies": {
     "assert": "^1.3.0",
@@ -15,7 +20,6 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
-    "sandboxed-module": "^2.0.3",
     "serve-favicon": "~2.3.0",
     "soap": "^0.12.0"
   },

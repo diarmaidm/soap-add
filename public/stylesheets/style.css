@@ -14,3 +14,11 @@ a {
 #navbar-custom .navbar-brand {
     color: white;
 }
+
+#navbar-custom2 {
+  background-color: darkred;
+}
+
+#navbar-custom2 .navbar-brand {
+    color: #004a88;
+}

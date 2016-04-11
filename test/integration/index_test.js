@@ -57,7 +57,7 @@ describe('Home Page to add using soap service', function () {
         .expect(/type="submit"/)
         .expect(/method="POST"/, done);
     });
- 
+
     it('adds 2 and 4 and shows the sum as 6 when submit clicked', function (done) {
       var a = 2, b = 4;
       request(app).post('/')
@@ -101,9 +101,9 @@ describe('Home Page to add using soap service', function () {
 
         done();
 
-        })
+        });
 
-    })
+    });
 
 function decode(string) {
   var body = new Buffer(string, 'base64').toString('utf8');
@@ -133,7 +133,7 @@ function decode(string) {
 //       return cookie.split('=')[0] === name
 //     }), 'should have cookie "' + name + '"')
 //   }
-// }    
+// }
 
 
   });

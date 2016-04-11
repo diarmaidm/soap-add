@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(cookieSession({
   name: 'session',
   keys: ['num1', 'num2']
-}))
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 // to allow using bower_components - fix when building for prod.
 app.use(express.static(path.join(__dirname, 'bower_components')));
