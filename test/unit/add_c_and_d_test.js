@@ -1,8 +1,8 @@
-// var addCandD = require('../../routes/add_c_and_d');
+// var addCandDCD = require('../../routes/add_c_and_d');
 
 // describe('addCandD() function', function () {
 //   it('returns the sum of 2 values as calculated in the function) ', function (done) {
-//     expect(addCandD()).to.equal(9);
+//     expect(addCandD.addCandD()).to.equal(9);
 //     done();
 //   });
 // });
@@ -31,7 +31,9 @@ describe('addCandD() function', function () {
       get_d: fakeGetD
     };
 
-    var addCandD = SandboxedModule.require("../../routes/add_c_and_d", {
+//  var addCandD = require('../../routes/add_c_and_d');
+// The path in the requires object is the relatice path to the sandbox require path
+    var CandD = SandboxedModule.require("../../routes/add_c_and_d", {
       requires: {
         './get_c': localget_c,
         './get_d': localget_d
@@ -45,7 +47,7 @@ describe('addCandD() function', function () {
 //       }
 //     });
 
-    expect(addCandD.addCandD()).to.equal(15);
+    expect(CandD.addCandD()).to.equal(15);
 // had to change after returning an object
 //    expect(addCandD()).to.equal(15);
     done();
