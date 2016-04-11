@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var cookieSession = require('cookie-session');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+var index1 = require('./routes/index');
 var index2 = require('./routes/index2');
 //var users = require('./routes/users');
 
@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // to allow using bower_components - fix when building for prod.
 app.use(express.static(path.join(__dirname, 'bower_components')));
 
-app.use('/', routes);
+app.use('/', index1);
 app.use('/index2', index2);
 //app.use('/users', users);
 
@@ -64,6 +64,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
