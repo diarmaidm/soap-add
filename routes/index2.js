@@ -9,9 +9,13 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function (req, res, next) {
   console.log('......in index2 post');
-  //var sum = 10;
-  var sum = CandD.addCandD();
-  console.log('......in index2 post - after CandD.addCandD() call, sum ', sum);
+
+  var temp = 0;
+  console.log('......in index2 post - before var sum ');
+//   var sum = CandD(temp);
+ var sum = CandD.addCandD(temp);
+//   var sum = CandD.addCandD();
+  console.log('......in index2 post - after var sum ', sum);
 
   res.end(sum.toString());
 });

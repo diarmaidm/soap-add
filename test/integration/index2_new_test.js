@@ -1,46 +1,15 @@
 var request = require('supertest');
 // var app = require('../../app');
-var SandboxedModule = require('sandboxed-module');
+// var SandboxedModule = require('sandboxed-module');
 
 describe('new add page', function () {
 
+  // if we take done as parameter we get error:
   it('adds 2 and 4 and shows the sum as 6', function (done) {
+  // it('adds 2 and 4 and shows the sum as 6', function () {
 
-    var fakeAddCandD = function () {
-      // var c = 6;
-      // var d = 7;
-      console.log('\t%_%_%_%_ \tSandboxed % \tfakeAddCandD % \tfakeAddCandD _%_ ');
-      return 13;
-    };
-
-    // var localAddCandD = {
-    //   CandD: fakeAddCandD
-    // };
-    var localAddCandD = {
-      addCandD: fakeAddCandD
-    };
-
-    var index2 = SandboxedModule.require('../../routes/index2', {
-      requires: {
-        './add_c_and_d': localAddCandD
-      }
-    });
-    // console.log('.. .. .. ..... after index = SandboxedModule.require... index ', index2);
-
-    var myApp = SandboxedModule.require('../../app', {
-      requires: {
-        './routes/index': require('../../routes/index'),
-        './routes/index2': index2
-      }
-    });
-    // var myApp = SandboxedModule.require('../../app', {
-    //   requires: {
-    //     './routes/index': require('../../routes/index'),
-    //     './routes/index2': index2
-    //   }
-    // });
-    // console.log('.. .. .. ..... after myApp = SandboxedModule.require... myApp ', myApp);
-    // console.log('.. .. .. ..... after app ... app ', app);
+    // I extracted the sandboxed stuff to file
+    var myApp = require('./my-sandbox');
 
     var agent = request.agent(myApp);
     // var agent = request.agent(app);
@@ -52,7 +21,9 @@ describe('new add page', function () {
     agent.post('/index2')
       .send({a: a, b: b})
       .end(function (req, res) {
-        // console.log('.. .. .. ..... after end(function (req, res) res ', res, ' req, ', req);
+        console.log('in .end callback.....', res.status);
+        // console.log('in .end callback.req.', req);
+        // console.log('in .end callback.res.', res);
         expect(res.status).to.equal(200);
         expect(res.text).to.contain( '13' );
         //expect(res.text).to.contain( (a+b) );
