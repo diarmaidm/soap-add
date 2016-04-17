@@ -35,3 +35,6 @@ bower_components
 
 # IntelliJ
 .idea
+
+# Visual Code
+.vscode
