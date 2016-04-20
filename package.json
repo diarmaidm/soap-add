@@ -1,6 +1,6 @@
 {
   "name": "soap-add",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "prestart": "node ./test/unit/get_a.js",

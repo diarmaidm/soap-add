@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 
 var index1 = require('./routes/index');
 var index2 = require('./routes/index2');
-//var users = require('./routes/users');
 
 var app = express();
 
@@ -32,7 +31,6 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 app.use('/', index1);
 app.use('/index2', index2);
-//app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
