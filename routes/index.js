@@ -4,13 +4,13 @@ var soap = require('soap');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log('.-.-.-.in index get');
+  // console.log('.-.-.-.in index get');
   res.render('index', { title: 'soap add application' });
 });
 
 /* POST home page. */
 router.post('/', function(req, res, next) {
-  console.log('.-.-.-.in index post');
+  // console.log('.-.-.-.in index post');
   req.session.num1 = 'test1';
   req.session.num2 = 'test2';
   req.session.num3 = 'test3';

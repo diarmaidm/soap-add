@@ -1,4 +1,4 @@
-var expect = require('chai').expect;
+// var expect = require('chai').expect;
 var getb = require('./get_b');
 
 describe('getB() function', function () {

@@ -1,7 +1,7 @@
 // function getB() {
 function get_b() {
   var b = 5;
-  console.log('+ + + + + + in real getB function. b ===', b);
+  // console.log('+ + + + + + in real getB function. b ===', b);
   return b;
 }
 
