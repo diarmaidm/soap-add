@@ -119,7 +119,14 @@ We know we want addCandD to call get_c and get_d and return the results. However
   },
   ```
 #### To use nodemon and run the app using node
-* change package.json `"start": "node ./bin/www",` to `"start": "nodemon ./bin/www",`
+* change package.json
+
+`"start": "node ./bin/www",`
+
+to
+
+`"start": "nodemon ./bin/www",`
+
 * start the application on server using `PORT=3000 node ./bin/www`
 
 

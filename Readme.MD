@@ -18,7 +18,13 @@ fork and clone application locally eg.
 Start the server with `npm start` and browse http://localhost:3000 in chrome
 
 ### Pivotal Cloud Foundry
-This application is published to http://soap-add.cfapps.io/ using `cf push`
+This application is published to http://soap-add.cfapps.io/ using `cf push` which reads manifest.
+
+Download and install the Cloud Foundry CLI https://console.run.pivotal.io/tools
+
+Follow the instructions under **GETTING STARTED**
+
+To get info from terminal use `cf logs soap-add --recent`
 
 ## Working Notes:
 I installed jshint as a dev dependancy

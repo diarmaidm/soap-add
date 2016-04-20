@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prestart": "node ./test/unit/get_a.js",
-    "start": "nodemon ./bin/www",
+    "prestart": "echo 'node ./test/unit/get_a.js'",
+    "start": "node ./bin/www",
     "posttest": "echo '. . . . . the tests have been ran!\n. . . . . Running jshint now.....\n'; npm run lint",
     "test": "node node_modules/.bin/mocha",
     "prettest": "echo 'the test has been run!'",
