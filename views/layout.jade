@@ -7,9 +7,12 @@ html
     //- link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap-theme.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    div
-      a(href="/").navbar-brand index
-    div
-      a(href="/index2").navbar-brand index2
+    nav(id="navbar-custom").navbar.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header
+          a(href="#").navbar-brand Add two numbers.
+        div.navbar-right
+          a(href="/").navbar-brand index
+          a(href="/index2").navbar-brand index2
 
     block content

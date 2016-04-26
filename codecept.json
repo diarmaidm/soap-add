@@ -1,0 +1,17 @@
+{
+  "tests": "./ui_tests/*_test.js",
+  "timeout": 10000,
+  "output": "./ui_tests/logs",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:3000",
+      "browser": "phantomjs"
+    }
+  },
+  "include": {
+    "I": "./ui_tests/steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "soap-add"
+}

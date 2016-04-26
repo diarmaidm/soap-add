@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prestart": "echo 'node ./test/unit/get_a.js'",
+    "prestart": "",
     "start": "node ./bin/www",
-    "posttest": "echo '. . . . . the tests have been ran!\n. . . . . Running jshint now.....\n'; npm run lint",
+    "prettest": "echo 'The tests will run now.'",
     "test": "node node_modules/.bin/mocha",
-    "prettest": "echo 'the test has been run!'",
+    "posttest": "echo '\n. . . . . the tests have ran!\n. . . . . Running jshint now.....\n'; npm run lint",
     "lint": "jshint routes/ test/ ",
     "anotherway": "jshint *.js **/*.js **/**/*.js"
   },
@@ -25,11 +25,14 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "codeceptjs": "^0.3.3",
     "jshint": "^2.9.1",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1",
     "sandboxed-module": "^2.0.3",
+    "selenium-webdriver": "^2.53.1",
     "sinon": "^1.17.3",
-    "supertest": "^1.2.0"
+    "supertest": "^1.2.0",
+    "webdriverio": "^4.0.5"
   }
 }

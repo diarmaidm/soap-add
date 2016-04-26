@@ -10,7 +10,7 @@ router.post('/', function (req, res, next) {
   var temp = 0;
   var sum = CandD.addCandD(temp);
 
-  res.end(sum.toString());
+  res.render('index2', {result: sum });
 });
 
 module.exports = router;

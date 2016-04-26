@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 #{title}
+  div
+    form(action="/multiply" method="POST" name="multiply_numbers")
+      div
+        label(for="firstNumber") First Number:
+        input(type="text" name="firstNumber" id="firstNumber" placeholder="Enter 1st Number")
+      div
+        label(for="secondNumber") Second Number:
+        input(type="text" name="secondNumber" id="secondNumber" placeholder="Enter 2nd Number")
+      p
+      div
+        input(type="submit" value="Multiply the numbers")
+    div
+      label(name="product" id="product") The product of #{firstNumber} * #{secondNumber} = #{result}

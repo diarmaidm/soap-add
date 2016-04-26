@@ -1,11 +1,11 @@
-var multiply = require('./multiply');
+var multiply = require('../../model/multiply');
 
 describe('multiply function', function () {
   it('multiply 3 and 4 and returns 12 ', function (abc) {
     expect(multiply(3,4)).to.equal(12);
     abc();
   });
-  
+
   it('multiply 4 and 4 and returns 16 ', function (done) {
     expect(multiply(4,4)).to.equal(16);
     done();
