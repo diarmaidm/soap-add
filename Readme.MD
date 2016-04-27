@@ -188,6 +188,12 @@ I added
 ```"pretest": "jshint routes test",```
 to package.json to do basic linting when tests are ran
 
+#### Installing codeceptjs
+`npm install --save-dev codeceptjs`
+`npm install --save-dev webdriverio`
+`npm install -g codeceptjs`
+`npm install -g webdriverio`
+
 
 
 

@@ -5,9 +5,9 @@
   "scripts": {
     "prestart": "",
     "start": "node ./bin/www",
-    "prettest": "echo 'The tests will run now.'",
+    "prettest": "",
     "test": "node node_modules/.bin/mocha",
-    "posttest": "echo '\n. . . . . the tests have ran!\n. . . . . Running jshint now.....\n'; npm run lint",
+    "posttest": "npm run lint",
     "lint": "jshint routes/ test/ ",
     "anotherway": "jshint *.js **/*.js **/**/*.js"
   },

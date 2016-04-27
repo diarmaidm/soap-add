@@ -5,7 +5,7 @@
   "helpers": {
     "WebDriverIO": {
       "url": "http://localhost:3000",
-      "browser": "phantomjs"
+      "browser": "chrome"
     }
   },
   "include": {
