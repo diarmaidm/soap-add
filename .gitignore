@@ -41,4 +41,4 @@ bower_components
 
 # Others
 codecept.json.orig
-ui_tests/selenium-server-standalone-2.53.0.jar
+# ui_tests/selenium-server-standalone-2.53.0.jar
