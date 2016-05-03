@@ -1,8 +1,8 @@
 var request = require('supertest');
 
 describe('new add page', function () {
-
   it('adds 2 and 4 and shows the sum as 6', function (done) {
+    this.timeout = 10000;
 
     var myApp = require('./my-sandbox');
 
