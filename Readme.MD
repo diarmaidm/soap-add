@@ -179,6 +179,12 @@ Follow the instructions under **GETTING STARTED**
 
 To get info from terminal use `cf logs soap-add --recent`
 
+### Heroku
+It is also published to https://soap-add.herokuapp.com/
+
+### Travis-ci
+https://travis-ci.org/getting_started
+
 ## Working Notes:
 I installed jshint as a dev dependancy
 ```npm install jshint --save-dev```
