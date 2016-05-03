@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/diarmaidm/soap-add.svg?branch=master)](https://travis-ci.org/diarmaidm/soap-add)
+
 # Useful links and information.
 * [Agile Manifesto](http://agilemanifesto.org/)
 * [Printable pdf version](https://assets.uits.iu.edu/pdf/Agile-Manifesto.pdf)

@@ -1,2 +1,3 @@
 --require test/helper
 --recursive
+--timeout 10000
