@@ -1,7 +1,14 @@
 language: node_js
 node_js:
-  - "5"
-  - "5.1"
-  - "4.2"
-  - "0.12"
-  - "0.10"
+- '5'
+- '5.1'
+- '4.2'
+- '0.12'
+- '0.10'
+deploy:
+  provider: heroku
+  api_key:
+    secure: MCcdWtqLZ79oime5nfSuzCdgvmrexsM881Ydz86FV29EOCs8Gm5xbkXuXHHS3OzB8698lNDruXuOglMdUPavh5b5H6fPIr4BFHmb/uawX78YrT0W2YWVwDRS1Bh75OzZAbVf1tekgmgSj3OiVF55EOGzEpku3sSCW8xiHUORD2/k8vlr2QRgWgDj/kKaHxJgMRX3ZUgleNEd+BaUjYNFPn1vxUngTiT/YIcwtS9up4elJvT9y7v7uRey7BgHi34BaSOBcbrsUUDjrOxFIcU4wWoioB3bT5R6R4xdnmUTDj4pLcx4pkqS8GKWtrpqZKvOhkCKOgiqWPT47mytsE753XNAsuc6yVCK41WKajpYYD8UCRC9ZyfloyUByz9SeyYsA4SFGC/OOaKFnvKRtquRnXqnSjaEgKif0ovnj7/IyC7HKH/CoeUSFfVsmRKWRN/R2rr0HcBTTd9qZ8ZiYIhTn0hZJ5b5cVK9RrewWBkoke8x/F14bvmDmv+XG39AtEWFD4WbzdDvgQJm59KmUiuwVlYEZfFsjbyEZ/YRgzeFmGq9XRsRAyDvEQEk5vJ8H2E241fVu9Iyi2St9wgK49ZakOeM+qqaI87l1T3GVCjvaTH9WvqYVZJ5sLDanTDUKiQlVI77NMuzXtR/8OM3wN89LN4TGof/6ogYD/vvSFLMUzQ=
+  app: soap-add
+  on:
+    repo: diarmaidm/soap-add
