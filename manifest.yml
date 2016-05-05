@@ -6,4 +6,3 @@ applications:
     APP_ENV: uat
   instances: 2
   command: node ./bin/www
-  
