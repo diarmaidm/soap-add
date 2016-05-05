@@ -149,8 +149,6 @@ Once our multiply is completed and unit tests pass our UI test will (should) aut
 * `npm start`
 * `codeceptjs run --steps`
 
-
-
 <hr>
 
 # Add two number using a soap call
@@ -173,13 +171,7 @@ fork and clone application locally eg.
 Start the server with `npm start` and browse http://localhost:3000 in chrome
 
 ### Pivotal Cloud Foundry
-This application is published to http://soap-add.cfapps.io/ using `cf push` which reads manifest.
-
-Download and install the Cloud Foundry CLI https://console.run.pivotal.io/tools
-
-Follow the instructions under **GETTING STARTED**
-
-To get info from terminal use `cf logs soap-add --recent`
+This application is published to http://soap-add.cfapps.io/
 
 ### Heroku
 It is also published to https://soap-add.herokuapp.com/
@@ -191,8 +183,6 @@ https://travis-ci.org/getting_started
 I installed jshint as a dev dependancy
 ```npm install jshint --save-dev```
 
-I added
-
 ```"pretest": "jshint routes test",```
 to package.json to do basic linting when tests are ran
 
@@ -201,7 +191,3 @@ to package.json to do basic linting when tests are ran
 `npm install --save-dev webdriverio`
 `npm install -g codeceptjs`
 `npm install -g webdriverio`
-
-
-
-
