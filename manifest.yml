@@ -2,3 +2,5 @@
 applications:
 - name: soap-add
   memory: 128M
+  env:
+    APP_ENV: uat
