@@ -1,8 +1,9 @@
 ---
 applications:
 - name: soap-add
-  memory: 128M
+  memory: 64M
   env:
     APP_ENV: uat
-  instances: 1
+  instances: 2
   command: node ./bin/www
+  
