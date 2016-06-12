@@ -12,6 +12,11 @@ var multiply = require('./routes/multiply');
 
 var app = express();
 
+app.use(function(req, res, next) {
+  console.log('\n SOAP ADD ..... ..... ..... ..... ..... ..... ..... ..... ..... ..... in app.js -> req.headers\n', req.headers);
+  next();
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

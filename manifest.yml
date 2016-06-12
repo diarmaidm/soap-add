@@ -4,5 +4,5 @@ applications:
   memory: 64M
   env:
     APP_ENV: uat
-  instances: 2
+  instances: 1
   command: node ./bin/www
