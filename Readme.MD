@@ -27,6 +27,7 @@ We aim to work on **Products** as opposed to __Projects__
 * Repeat.
 
 <hr>
+
 # Multiple 2 numbers.
 ## Create the UI test
 * Write a UI Test
@@ -68,7 +69,9 @@ We aim to work on **Products** as opposed to __Projects__
   ✓ OK in 925ms
 ```
 * Once the test passes restart/continue the cycle again...
+
 <hr>
+
 **Note** I am skipping and/or compressing some steps for briefness in the document.
 * Build out our UI test and basic implementation using Red - Green - Refactor.
   ```
