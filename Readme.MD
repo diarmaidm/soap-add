@@ -2,7 +2,8 @@
 
 # Useful links and information.
 * [Agile Manifesto](http://agilemanifesto.org/)
-* [Printable pdf version](https://assets.uits.iu.edu/pdf/Agile-Manifesto.pdf)
+* [Printable pdf and hig-res png can be got from here...](http://richd.me/2011/05/agile-manifesto-poster/)
+* [Printable pdf direct link](http://richd.me/wp-content/uploads/2011/05/Agile-Manifesto.pdf)
 * [The Agile Manifesto - article by Martin Fowler](http://goo.gl/M1shQh)
 * [Kanban vs Scrum vs XP – an Agile comparison](https://goo.gl/dTv0N2)
   * Scrum "project management methodology".
